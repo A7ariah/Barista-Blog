@@ -44,7 +44,17 @@ body{
   color: #10127a;
 
 }
-.box {
+.cards,
+  img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    object-position: bottom;
+    width: 100;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: white;
+    padding: 5px;
   
 }
 
