@@ -8,10 +8,31 @@
     }
 
 
+
 *{
     box-sizing:order-box;
     padding: 0;
     margin: 0;
+}
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #006241;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: navy;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: red;
+  background-color: transparent;
 }
 
 button {
@@ -88,8 +109,9 @@ header{
 
 main{
   background-color: rgb(247, 247, 247);
-
 }
+
+
 
 aside{
   color: rgb(247, 247, 247);
@@ -270,7 +292,8 @@ aside{
     }
     
   }
-  
+
+
   @media screen and (max-width: 768px) {
     .hamburger {
       float: right;

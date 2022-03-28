@@ -5,10 +5,13 @@
     --light: #f3f3f3
 }
 
+
 * {
   margin: 0%;
   padding: 0;  
 }
+
+
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -16,16 +19,19 @@ body{
     min-height: 100vh;
 }
 
-.card{
-    margin: 100px;
+
+.card {
+    margin: 100px auto 0;
     width: 300px;
     height: 200px;
+    perspective: 1000px;
 }
 
-.card_inner {
+.card_inner{
     width: 100%;
     height: 100%;
     transition: transform 1s;
+    transform-style: preserve-3d;
     cursor: pointer;
     position: relative;
     
@@ -47,8 +53,7 @@ body{
 }
 
 .card_face--front {
-    background-image: linear-gradient(to bottom right, var(--primary),
-    var(--secondary));
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,18 +65,17 @@ body{
 }
 
 .card_face--back{
-    background-color: var(--light);
     transform: rotateY(180deg);
 }
 
 .card_content{
     width: 100%;
-    padding: 30px 30px 30px;
+    height: 100%;
 }
 .card_header {
     position: relative;
-    padding: 30px 30px 40px;
 }
+
 .card_header{
     content: '';
     display: block;
@@ -81,12 +85,11 @@ body{
     right: 0;
     bottom: 0;
     z-index: -1;
-    border-radius: 0 0 50% 0;
-    background-image: linear-gradient(to bottom left, var(--primary) 10%,
-    var(--secondary) 115% );
+    border-radius: 0px 0px 50% 0px;
 }
 
 .pp{
+    display: block;
     object-fit: cover;
 }
 
@@ -96,6 +99,10 @@ body{
     font-weight: 900;
     text-transform: uppercase;
     text-align: center;
+}
+
+.card_body{
+    padding: 30px;
 }
 
 .card_body h3{
@@ -108,5 +115,5 @@ body{
 .card_body p{
     color: var(--dark);
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.4;
 }
