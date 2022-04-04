@@ -1,6 +1,6 @@
 
 :root{
-    --main-color: #107218;
+    --main-color: #1e3932;
   }
   
   
@@ -13,13 +13,14 @@
   header, footer{
     width: 100%;
     padding: 10px 0;
+    background-color: var(--main-color);
   }
   header {
     top: 0;
     text-align: h1;
     position: absolute;
     width: 100%;
-    background-color: rgb(247, 247, 247);
+    background-color: var(--main-color);
     color:blue;
     flex-basis: 250px;
     height: 90px;
@@ -28,17 +29,17 @@
   
   text{
     font-family:Georgia, 'Times New Roman', Times, serif;
+    
   }
   h3{
     font-size: 45px;
   }
-  .navbar{
+  .navbar>button{
   position: fixed;
   /*position: relative;*/
   width: 100%;
   top: 0;
   left: 0;
-  background-color: #ffffff;
   }
   
   a:link {
@@ -62,15 +63,21 @@
   color: red;
   background-color: transparent;
   }
-  
+  header > button{
+    vertical-align: top;
+  }
+
   button {
   display: inline-block;
+  top: 0;
   height: 52px;
   padding: 0px;
   margin: 30px;
   width: 67px;
   top: 10px;
   position: fixed right;
+  border-radius: 20px;
+  border-color: transparent;
   }
   
   /* */
@@ -79,7 +86,7 @@
     position: relative;
     padding-bottom: 2.5rem;
     padding-top: 2.5rem;
-    background-color: var(--main-color);
+    background-color:aliceblue;
     min-height: 100vh;
     } 
   
@@ -125,9 +132,11 @@
   } 
   
   .support{
-    height: 300px;
-    top: 20px;
     width: 100%;
+    padding: 3px 3px;
+    text-align: center;
+    line-height: 0.75rem;
+    padding-top: 10rem;
   }
 
   .footer{
@@ -358,7 +367,11 @@
   .hamburger {
     float: right;
   }
-  
+  body{
+    display: flex;
+    margin-bottom: 2.5rem;
+  }
+
   .h1 h1 {
     left: 23%;
     top: 50%;
@@ -412,9 +425,10 @@
   letter-spacing: 0px;
   }
   .footer{
+  margin-top: 2.5rem;
   background-color: rgb(247, 247, 247);
   display: flex;
-  flex-direction: column;
+  flex-direction: column wrap;
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 10px 20px;

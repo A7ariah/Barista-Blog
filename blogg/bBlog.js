@@ -42,7 +42,7 @@ function next_slide(){
     setTimeout(function() {
       index++;
       next_slide();
-    }, 2000);
+    }, 3000);
   }
 }
 
@@ -82,10 +82,10 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
 
 function Share() {
-  alert("This paige is still under construction!");
+  alert("This page is still under construction!");
 }
 
 function Learn() {
-  alert("This paige is still under construction!");
+  alert("This page is still under construction!");
 }
 

@@ -18,7 +18,7 @@
       </h1>
       <menu class="navbar">
         <ul>
-          <button><a href="bBlog.html" src="Photos/fraps.heic"><b>_</b></a></button>
+          <button><a href="bBlog.html" src="Photos/fraps.heic"><b>Home</b></a></button>
           <button onclick="Learn()"><a href="learn.html"><b>Learn</b></a></button>
           <button onclick="Share()"><a href=""><b>Share</b></a></button>
           <button><a href="aboutUs.html"><b>About Us</b></a></button>
@@ -29,7 +29,6 @@
   </header>
 </head>
 
-<body>
     <main class="clearfix">
       <div id="slide-show-c">
         <div id="slide-show">
@@ -44,7 +43,6 @@
             </div>
           
     </main>
-
   
 
     <aside class="about">____</aside>
@@ -78,8 +76,15 @@
   padding: 0;  
 }
 
+main{
+  display: flex;
+  justify-content: center;
+  min-width: 600px;
+
+}
 .content{
-  min-height: 200px;
+  min-height: 100%;
+  position: center;
 }
 
 .clear-fix{
@@ -89,10 +94,11 @@
 
 .slide-show{
   max-height: 100%;
-  max-width: 600px;
+  max-width: 1000px;
   margin-top: 25px;
   margin: 50px;
   align-items: center;
+  position: center;
 
 }
 
@@ -107,3 +113,5 @@ justify-content: center;
 padding: 5px;
 
 }
+
+</style>

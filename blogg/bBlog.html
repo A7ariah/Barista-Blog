@@ -16,7 +16,7 @@
       </h1>
       <menu class="navbar">
         <ul>
-          <button><a href="bBlog.html" src="Photos/fraps.heic"><b>_</b></a></button>
+          <button><a href="bBlog.html" src="Photos/fraps.heic"><b>Home</b></a></button>
           <button onclick="Learn()"><a href="learn.html"><b>Learn</b></a></button>
           <button onclick="Share()"><a href=""><b>Share</b></a></button>
           <button><a href="aboutUs.html"><b>About Us</b></a></button>
@@ -26,8 +26,13 @@
 
   </header>
 </head>
+
+<main>
+  
+
 <div class="support">
-  <h3>Just Keep Swimming!</h3>
+  <h3> I think Baristas are great programers, 
+    they know alot about Java!</h3>
 </div>
 
 
@@ -50,7 +55,7 @@
         <div class="content">
           <p>Share your work creations with others barista!</p>
         </div>
-        <button onclick="Share()"><a href="share.html"><b>Share</b></a></button>
+        <button onclick="Share()"><a href=""><b>Share</b></a></button>
       </div>
 
       <div class="card">
@@ -76,12 +81,10 @@
     </div>
 
   </div>
- 
-
+ </main>
 
   </div>
   </div>
-
 
   </main>
 </body>
@@ -124,11 +127,13 @@
   }
   /*emotional support message*/
 
-  .support{
+  h3 {
     height: 300px;
-    top: 20px;
+    top: 50px;
     width: 100%;
+    font-weight: 700;
   }
+
   .container {
     display: flex;
     flex-direction: row;
@@ -142,12 +147,15 @@
   .container>* {
     flex: 0.5 2 30em;
   }
+
   .card{
     background-color: var(--main-color);
     text-align: center;
     font-size: larger;
     margin: 20px;
     font-weight: 700;
+    color: antiquewhite;
+    border-radius: 10px;
   }
 
 
@@ -168,6 +176,7 @@
   .card>.content .anouncment {
     flex: 1 1 40%;
     color: white;
+    margin: 10px;
   }
 
   .content .announcement {
@@ -177,6 +186,19 @@
     padding-top: 25px;
   }
 
+  .content{
+  padding: 3px 4.8px;
+  text-align: center;
+  line-height: 0.75rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 2;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1px solid;
+  resize: none;
+  }
 
   img {
     min-height: 500px;
@@ -208,10 +230,12 @@
       height: auto;
       flex-direction: column wrap;
       overflow: hidden;
+      column-count: 2;
+
     }
 
     .card img {
-      max-width: 500px;
+      max-width: 300px;
     }
 
     img {
@@ -219,10 +243,12 @@
     }
 
     .content {
+      flex-wrap: nowrap;
       min-height: 100px;
       text-align: center;
       font-size: 25px;
       padding-top: 25px;
+
     }
 
     .banner {
@@ -249,6 +275,9 @@
 
   @media(min-width: 1046px) {
 
+    body{
+      column-count: 3;
+    }
     .content {
       min-height: 100px;
     }
