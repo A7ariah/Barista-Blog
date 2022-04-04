@@ -1,7 +1,7 @@
-<!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="bBlog.css">
+
 <link rel="stylesheet" href="cards.css">
+<link rel="stylesheet" href="bBlog.css">
 
 
 <head>
@@ -13,15 +13,15 @@
           <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
-            <div class="line"></div> 
+            <div class="line"></div>
           </div>
       </h1>
       <menu class="navbar">
         <ul>
-          <li><a href="bBlog.html"><button id="close-image"></button></a></li>
-          <li><a href="learn.html"><b>Learn</b></a></li>
-          <li><a href="share.html"><b>Share</b></a></li>
-          <li><a href="aboutUs.html"><b>About Us</b></a></li>
+          <button><a href="bBlog.html" src="Photos/fraps.heic"><b>_</b></a></button>
+          <button onclick="Learn()"><a href="learn.html"><b>Learn</b></a></button>
+          <button onclick="Share()"><a href=""><b>Share</b></a></button>
+          <button><a href="aboutUs.html"><b>About Us</b></a></button>
         </ul>
       </menu>
       </div>
@@ -30,25 +30,20 @@
 </head>
 
 <body>
-  <nav class="MainContent">
-
     <main class="clearfix">
-      <div class="row limited">
-
+      <div id="slide-show-c">
+        <div id="slide-show">
+          <img id="main-img">
+        </div>
       </div>
+
+          <div class="card_inner">
+          
     </main>
 
-    <main>
-     <div class="homies">
-       <div class="py5 flex items-center justify-center">
-       <img src="Photos/laughing.heic" alt="people lauging" width="1000" height="400">
-       <img src="Photos/IMG_7874.HEIC" alt="girl with rainbow stripe" width="1000" height="1000">
-       <img src="Photos/colton.heic" alt="colton.heic">
-     </div>
-    </div>
+  
 
-    </main>
-    <aside class="about">About Us</aside>
+    <aside class="about">____</aside>
 
     <footer>
       <ul>
@@ -69,3 +64,37 @@
 
 </html>
 </div>
+
+<style>
+
+
+
+* {
+  margin: 0%;
+  padding: 0;  
+}
+
+
+.clear-fix{
+  max-width: fit-content;
+  margin-top: 25rem;
+}
+
+.slide-show{
+  max-height: 100%;
+  max-width: 600px;
+  margin-top: 25px;
+  margin: 50px;
+}
+
+
+img {
+width: 500px;
+height: 500px;
+object-fit: cover;
+object-position: bottom;
+flex-wrap: wrap;
+justify-content: center;
+padding: 5px;
+
+}

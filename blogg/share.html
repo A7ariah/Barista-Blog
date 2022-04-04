@@ -1,6 +1,6 @@
-<!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="bBlog.css">
+
 
 
 
@@ -18,10 +18,10 @@
       </h1>
       <menu class="navbar">
         <ul>
-          <li><a href="bBlog.html"><button id="close-image"></button></a></li>
-          <li><a href="learn.html"><b>Learn</b></a></li>
-          <li><a href="share.html"><b>Share</b></a></li>
-          <li><a href="aboutUs.html"><b>About Us</b></a></li>
+          <button><a href="bBlog.html" src="Photos/fraps.heic"><b>_</b></a></button>
+          <button onclick="Learn()"><a href="learn.html"><b>Learn</b></a></button>
+          <button onclick="Share()"><a href="share.html"><b>Share</b></a></button>
+          <button><a href="aboutUs.html"><b>About Us</b></a></button>
         </ul>
       </menu>
       </div>
@@ -30,44 +30,37 @@
 </head>
 
 <body>
-  <nav class="MainContent">
 
-    <main class="clearfix">
-      <div class="row limited">
+    
 
-      </div>
-    </main>
-
-    <main>MainContent
+    <main>
       <form>
-        <div class="formBox">
-            <label for="title">Movie</label>
-            <input type="text" id="title" placeholder="Title"/>
+     
         </div>
-        <div class="formBox" >
-            <label for="yr">Year</label>
-            <input type="number" id="yr" placeholder="Year"/>
+      </form>
+      <div class="container">
+        <div class="card">
+          <div class="imgBx">
+            <img src="Photos/IMG_8191.PNG" alt="Shamrock shake">
+          </div>
+          <div class="content">
+            <p>Learn more about the original creators of this website and there insperations!</p>
+          </div>
         </div>
-        <div class="formBox">
-            <button id="btn">Click to Add</button>
-        </div>
-        <div id="msg">
-            <pre></pre>
-        </div>
-    </form>
+</div>
     </main>
-    <aside class="about">About Us</aside>
+    <aside class="about">_____</aside>
 
     <footer>
       <ul>
-      <div class="footer">
-        <li><a href="bBlog.html"><b>Home</b></a></li>
-        <li><a href="learn.html"><b>Learn</b></a></li>
-        <li><a href="share.html"><b>Share</b></a></li>
-        <li><a href="aboutUs.html"><b>About Us</b></a></li>
-        <p class="credit"> © 2022 Azariah totally illegitimate company :). All rights reserved.</p>
-      </div>
-    </ul>
+        <div class="footer">
+          <li><a href="bBlog.html"><b>Home</b></a></li>
+          <li><a href="learn.html"><b>Learn</b></a></li>
+          <li><a href="share.html"><b>Share</b></a></li>
+          <li><a href="aboutUs.html"><b>About Us</b></a></li>
+          <p class="credit"> © 2022 Azariah totally illegitimate company :). All rights reserved.</p>
+        </div>
+      </ul>
     </footer>
 
     <script src="BBlog.js"></script>
@@ -77,3 +70,42 @@
 
 </html>
 </div>
+
+<style>
+
+body{
+  
+  height: 500px;
+  overflow: scroll;
+  padding-top: 200px; 
+  padding-bottom: 2.5rem;
+ 
+}
+
+
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  max-height: 200px;
+  position: center;
+}
+.card > .imgBx{
+  flex: 1 1 40%;
+}
+
+.card > .content {
+  flex: 1 1 60%;
+}
+
+img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+  max-width: 50px;
+  max-height: 200px;
+}
+
+</style>
+

@@ -1,12 +1,9 @@
 
 
-let hamburger = 
-document.querySelector('.hamburger');
-let menu = 
-document.querySelector('.navbar');
-let bod = 
-document.querySelector('.container');
-console.log(hamburger)
+let hamburger = document.querySelector('.hamburger');
+let menu = document.querySelector('.navbar');
+let bod = document.querySelector('.container');
+
 hamburger.addEventListener('click', function() {
   hamburger.classList.toggle('isactive');
   menu.classList.toggle('active');
@@ -23,7 +20,7 @@ card.addEventListener('click', function () {
 });
 
 
-/*function popUp(){
+function popUp(){
   let usertag;
   let person = prompt("Please enter your user username");
   if (usertag == null || usertag == "")
@@ -34,7 +31,7 @@ card.addEventListener('click', function () {
   }
   // not sure what this part means
   document.getElementById("demo").innerHTML = text;
-  }*/
+  }
   
 let submition = [];
 
