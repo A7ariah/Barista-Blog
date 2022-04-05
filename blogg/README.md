@@ -3,6 +3,7 @@ My project is at the beginning stages of becoming a Starbucks barista support si
 
 CSS and JavaScript Elements:
 - Hamburger Icon.
+- Use of “:nth-child” or “nth-of-type” in the hamburger icon
 -Flexbox properties on the main menu.
 -spin card
 -Gallary Array in the about us page

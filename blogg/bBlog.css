@@ -1,6 +1,7 @@
 
 :root{
     --main-color: #1e3932;
+    --accent-color: antiquewhite;
   }
   
   
@@ -29,7 +30,6 @@
   
   text{
     font-family:Georgia, 'Times New Roman', Times, serif;
-    
   }
   h3{
     font-size: 45px;
@@ -43,7 +43,7 @@
   }
   
   a:link {
-  color: green;
+  color: var(--accent-color);
   background-color: transparent;
   text-decoration: none;
   }
@@ -298,15 +298,15 @@
   }
   
   .hamburger .line:nth-child(1) {
-  background-color: var(--main-color);
+  background-color: var(--accent-color);
   }
   
   .hamburger .line:nth-child(2) {
-  background-color: var(--main-color);
+  background-color: var(--accent-color);
   }
   
   .hamburger .line:nth-child(3) {
-  background-color: var(--main-color);
+  background-color: var(--accent-color);
   }
   
   .hamburger.isactive .line:nth-child(2) {
@@ -421,7 +421,7 @@
   
   .navbar li:hover {
   cursor: pointer;
-  background-color: #3b4fff;
+  background-color: #00801c;
   letter-spacing: 0px;
   }
   .footer{
